@@ -5,7 +5,7 @@ const App = () => {
   const [backendData, setBackendData] = useState([{}])
 
   useEffect(() => {
-    fetch('/api').then(
+    fetch('/api/users').then(
       response => response.json()
     ).then(
       data => {
