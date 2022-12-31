@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-
 const App = () => {
   const [backendData, setBackendData] = useState([{}])
 
