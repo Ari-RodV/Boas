@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React/*, { useEffect, useState }*/ from 'react'
+import Global from './styles/App.styles'
+import Header from './modules/Header'
 
 const App = () => {
+  /*
   const [backendData, setBackendData] = useState([{}])
 
   useEffect(() => {
@@ -11,18 +14,12 @@ const App = () => {
         setBackendData(data)
       }
     )
-  }, [])
+  }, [])*/
 
   return (
-    <div>
-      {(typeof backendData.users === 'undefined') ? (
-        <p>Loading...</p>
-      ) : (
-        backendData.users.map((user, i) => 
-          <p key={i}>{user}</p>
-        )
-      )}
-    </div>
+    <Global>
+      <Header />
+    </Global>
   )
 }
 
