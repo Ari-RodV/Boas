@@ -15,7 +15,7 @@ const LoginMain = styled.div`
         font-weight: bold;
     }
 
-    > p {
+    .forgot-password {
         text-align: end;
     }
     .green {

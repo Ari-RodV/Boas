@@ -49,7 +49,7 @@ const Header = () => {
           </div>
         </Promts>
         <PopupPanel trigger={LoginPopup} setTrigger={setLoginPopup}>
-          <Login />
+          <Login LoginTrigger={setLoginPopup} SignUpTrigger={setSignUpPopup} />
         </PopupPanel>
         <PopupPanel trigger={SignUpPopup} setTrigger={setSignUpPopup}>
             <CreateAccount />
