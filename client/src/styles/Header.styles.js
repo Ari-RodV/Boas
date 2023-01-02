@@ -24,6 +24,35 @@ const HeaderMain = styled.div`
 
 const UserShop = styled.div`
     justify-content: flex-end;
+    .user {
+        position: relative;
+        &:hover {
+            .hidden {
+                display: block;
+            }
+        }
+        .hidden {
+            position: absolute;
+            width: 150px;
+            height: fit-content;
+            right: -50px;
+            background-color: #e9cdb0;
+            box-shadow: 0px 0px 10px -3px rgba(43,43,43,0.75);
+            display: none;
+            border-bottom: 3px solid black;
+
+            p {
+                padding: 12px 15px;
+                font-size: 12px;
+                transition: 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgb(120,120,120);
+                }
+            }
+        }
+    }
     svg {
         right: 0;
         margin: 0 10px;
